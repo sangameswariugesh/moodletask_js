@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./task2.css"> -->
+    <style>
+      .con1{
+      height:50px;
+      width:50px;
+      background-color:black;
+      border-radius:50%;
+      margin:20px;
+}
+.container{
+      width: 25%;
+      margin: 0 auto;
+}
+h1{
+      color: white;
+}
+.b1{
+      height:30px;
+      width:100px;
+      font-size:20px;
+      margin-top: 40px;
+      border-radius:40px;
+      background-color: white;
+}
+.con2{
+      height:220px;
+      width:100px;
+      background-color: rgb(70, 50, 26);
+      border-radius:40px;
+      padding: 10px;
+      float: left;
+
+}
+.con3{
+      float: left;
+}
+    </style>
+</head>
+<body style="background-color: black;">
+<div class="container">
+  <h1>TRAFFIC LIGHT</h1>
+<div class="con3">
+    <div> <button class="b1" id="stopbutton"onclick="stop()">Stop</button></div>
+    <div> <button class="b1" id="readybutton"onclick="ready()">Ready</button></div>
+    <div> <button class="b1" id="gobutton"onclick="go()">Go</button></div>
+</div>
+<div class="con2">
+    <div class="con1" id="stoplight"></div>
+    <div class="con1" id="readylight"></div>
+    <div class="con1" id="golight"></div>
+</div>
+</div>
+<script>
+  var a=document.getElementById("stopbutton");
+var b=document.getElementById("readybutton");
+var c=document.getElementById("gobutton");
+var a1=document.getElementById("stoplight");
+var b1=document.getElementById("readylight");
+var c1=document.getElementById("golight");
+
+function stop()
+{
+   a.style.backgroundColor="red";
+   a1.style.backgroundColor="red";
+   b.style.backgroundColor="white";
+   b1.style.backgroundColor="black";
+   c.style.backgroundColor="white";
+   c1.style.backgroundColor="black";
+}
+function ready()
+{
+   b.style.backgroundColor="yellow";
+   b1.style.backgroundColor="yellow";
+   a.style.backgroundColor="white";
+   a1.style.backgroundColor="black";
+   c.style.backgroundColor="white";
+   c1.style.backgroundColor="black";
+}
+function go()
+{
+   c.style.backgroundColor="green";
+   c1.style.backgroundColor="green";
+   b.style.backgroundColor="white";
+   b1.style.backgroundColor="black";
+   a.style.backgroundColor="white";
+   a1.style.backgroundColor="black";
+} 
+</script>
+
+    <!-- <script src="task2.js"></script> -->
+</body>
+</html>

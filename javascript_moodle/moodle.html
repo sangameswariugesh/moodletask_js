@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html forms 
+    task1 -->
+    <h1>Add user</h1>
+    <label>Name</label></br>
+    <input type="text" id="us" name="us" value=""/><br>
+    <label>Email</label></br>
+    <input type="email" id="email" name="email" value=""/></br>
+    <button>Submit</button>
+
+    <!-- task2 -->
+   <h1>Add user</h1>
+    <label>Name</label></br>
+    <input type="text" id="us" name="us" value=""/><br>
+    <label>Email</label></br>
+    <input type="email" id="email" name="email" value=""/></br>
+    <button>Submit</button>
+
+    <!-- document object model
+    task1 -->
+    <p id ='text'>JavaScript Exercises - KGMicrocollege</p>
+ <div>
+<button id="jsstyle" onclick="js_style()">Style</button>
+ </div>
+ <script>
+    var para=document.getElementById('text');
+    para.style.color="violet";
+ </script>
+
+<!-- task 2 cat task -->
+<div id="divid">
+    <div>
+        <img id="img1" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png"class="cat-img" width="200px" height="200px"/>
+    </div>
+    <div>
+        <img id="img2" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png" class="cat-img" width="200px" height="200px"/>
+    </div>
+    <div>
+        <button id="b1" onclick="switchon()">ON</button>
+        <button id="b2" onclick="switchoff()">OFF</button>
+    </div>
+
+
+
+</div>
+
+<script>
+    var pdiv=document.getElementById("divid");
+pdiv.style.backgroundColor="black";
+var bulb=document.getElementById("img1");
+var cat=document.getElementById("img2");
+var on=document.getElementById("b1");
+var off=document.getElementById("b2");
+
+function switchon()
+{
+bulb.src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png";
+cat.src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png";
+on.style.backgroundColor="green";
+off.style.backgroundColor="white";
+}
+
+function switchoff()
+{
+bulb.src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png";
+cat.src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png";
+on.style.backgroundColor="white";
+off.style.backgroundColor="red";
+}
+</script>
+
+</body>
+</html>
